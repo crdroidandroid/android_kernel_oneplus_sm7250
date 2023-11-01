@@ -32,7 +32,7 @@ enum {
 };
 
 extern struct task_struct *nswapoutd;
-static inline bool current_is_nswapoutd(void)
+static inline bool current_is_nswapoutd()
 {
 	return current == nswapoutd;
 }
